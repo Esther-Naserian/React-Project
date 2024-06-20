@@ -1,7 +1,7 @@
 import {getUsers} from "../utils";
 import { useState,useEffect } from "react";
 
- export const useGetUsers = () => {
+ export const useGetUsers = ()=> {
     const[users,setUsers] = useState([]);
     const[error,setError]=useState('');
     const [loading,setLoading] =useState(false)
@@ -14,20 +14,14 @@ import { useState,useEffect } from "react";
                 console.log({users})
                 setUsers(users.users)
                 setLoading(false)
-
-
-           
-        
-            }catch(error){
+            }
+            catch(error){
                 setError(error.message);
                 setLoading(false)
 
             }
-
         };
         fetchUsers();
-
-
     },[])
     return{
         users,

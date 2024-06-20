@@ -1,0 +1,7 @@
+.images{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   margin-left: 210px;
+   /* margin-right: 50px; */
+}
+

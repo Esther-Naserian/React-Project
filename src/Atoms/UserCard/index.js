@@ -1,15 +1,16 @@
-import './index.css'
-const UserCard = ({image,fullName,id}) => {
+import './index.css';
+const UserCard=({image,fullName,id})=>{
     return(
-        <div className="images">
-            <div className='user'>
+        <div className='image'>
             <img src={image} alt={`${fullName} profile`}/>
             <h3>{fullName}</h3>
+            <img/>
+            <h3></h3>
         </div>
-        </div>
-    );
-    
-    
+    )
 };
 export default UserCard;
+
+
+
 
